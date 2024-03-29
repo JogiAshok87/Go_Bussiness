@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <!--header  code -->
+        <div class="header">
+            <h1>Go Business</h1>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Courses</li>
+                <li>Projects</li>
+                <li>Contact</li>
+            </ul>
+            <button>Try for free</button>
+        </div>
+        <!--dashboard code-->
+        <div class="dashboard">
+            <h1>Referral Dashboard</h1>
+            <div class="search-container">
+                <input type="text" placeholder="Search here..." id="search-input">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <button>Search</button>
+            <div class="user-profile">
+                <i class="fas fa-bell bell-icon"></i>
+                <img src="https://i.im.ge/2024/03/28/WarOer.image.png" alt="User Icon">
+                <div style="display:flex; flex-direction:column;font-size:12px;">
+                    <span class="name">Name</span>
+                    <span class="admin">Admin</span>
+                </div>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <!--card container code -->
+        <div class="card-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">$9,568.00</p>
+                    <p class="card-label">Total Balance</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-percent"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">60%</p>
+                    <p class="card-label">Discount Percentage</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">300</p>
+                    <p class="card-label">Total Referral</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">$300</p>
+                    <p class="card-label">Discount Amount</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-money-bill-alt"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">$465.00</p>
+                    <p class="card-label">Commission Amount</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">$158.00</p>
+                    <p class="card-label">Total Earning</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">40%</p>
+                    <p class="card-label">Commission Discount</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="card-content">
+                    <p class="card-value">$534.00</p>
+                    <p class="card-label">Total Bank Transfer</p>
+                </div>
+            </div>
+
+        </div>
+        <!--services code-->
+        <div class="services">
+            <div>
+                <p>Service</p>
+                <h2>some service</h2>
+            </div>
+            <div>
+                <p>Your Referrals</p>
+                <h2>0+ 0</h2>
+            </div>
+            <div>
+                <p>Active Referrals</p>
+                <h2>0+ 0</h2>
+            </div>
+            <div>
+                <p>Total Ref Earnings</p>
+                <h2>$0.00</h2>
+            </div>
+
+        </div>
+        <h3 class="referal-heading">Refer Friends And Earn More!!</h3>
+        <hr />
+        <!--referral code-->
+        <div class="referral-container">
+            <div class="referral-item">
+                <label for="referral-link">Your Referral Link</label>
+                <input type="text" id="referral-link" value="https://yourbusiness.com/refer/ABCXYZ" readonly>
+                <button class="copy-button" data-target="#referral-link"><i class="fa-solid fa-clone"></i> Copy</button>
+            </div>
+            <div class="referral-item">
+                <label for="referral-code">Your Referral Code</label>
+                <input type="text" id="referral-code" value="ABCXYZ" readonly>
+                <button class="copy-button" data-target="#referral-code"><i class="fa-solid fa-clone"></i> Copy</button>
+            </div>
+        </div>
+        <!--tableur container code-->
+        <div class="table-container">
+            <div class="table-header">
+                <div class="show-entries">
+                    <label for="show-entries">Show:</label>
+                    <select id="show-entries">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </div>
+                <div class="search">
+                    <label for="search">Search:</label>
+                    <input type="text" id="search">
+                </div>
+            </div>
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service Name</th>
+                        <th>Date</th>
+                        <th>Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pranjal</td>
+                        <td>PM</td>
+                        <td>2011/11/28</td>
+                        <td>$162,700</td>
+                    </tr>
+                    <tr>
+                        <td>paritosh</td>
+                        <td>PM</td>
+                        <td>2007/10/09</td>
+                        <td>$1,200,000</td>
+                    </tr>
+                    <tr>
+                        <td>palav</td>
+                        <td>B2b</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                    </tr>
+                    <tr>
+                        <td>Moumita</td>
+                        <td>HR</td>
+                        <td>2012/10/13</td>
+                        <td>$132,000</td>
+                    </tr>
+                    <tr>
+                        <td>Miltesh</td>
+                        <td>Graphics</td>
+                        <td>2011/06/07</td>
+                        <td>$206,850</td>
+                    </tr>
+                    <tr>
+                        <td>Srinivas</td>
+                        <td>Frontend</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                    </tr>
+                    <tr>
+                        <td>hrithik</td>
+                        <td>Graphics</td>
+                        <td>2011/05/03</td>
+                        <td>$163,500</td>
+                    </tr>
+                    <tr>
+                        <td>abc</td>
+                        <td>HR</td>
+                        <td>2011/12/12</td>
+                        <td>$106,450</td>
+                    </tr>
+                    <tr>
+                        <td>xyz</td>
+                        <td>B2b</td>
+                        <td>2011/08/12</td>
+                        <td>$145,500</td>
+                    </tr>
+                    <tr>
+                        <td>bcd</td>
+                        <td>B2b</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button class="previous">Previous</button>
+                <button class="page-number active">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="page-number">4</button>
+                <button class="page-number">5</button>
+                <button class="page-number">6</button>
+                <button class="next">Next</button>
+            </div>
+        </div>
+        <!--footer section code-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Premium</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Referral Program</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>HELP AND SUPPORT</h3>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Knowledge Center</a></li>
+                            <li><a href="#">Premium Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>LEARNING</h3>
+                        <ul>
+                            <li><a href="#">Learn Hub</a></li>
+                            <li><a href="#">Tutorials</a></li>
+                            <li><a href="#">Communities</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>RESOURCES</h3>
+                        <ul>
+                            <li><a href="#">Third-Party Tools</a></li>
+                            <li><a href="#">Illustrations</a></li>
+                            <li><a href="#">Stock Photos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>LEGAL</h3>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">EULA</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="copyright">&copy; 2023 Go Business, Inc. All rights reserved.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>
